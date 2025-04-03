@@ -1,0 +1,13 @@
+#head {
+
+    gap: 1rem;
+}
+
+.headWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unimp {
+    color: #777777;
+}

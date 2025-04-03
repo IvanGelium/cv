@@ -1,0 +1,19 @@
+#body {
+    width: 1240px;
+    background-color: #f0f0f0;
+    color: rgba(0, 0, 0, 0.9);
+    outline: 4px solid rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.block {
+    outline: 4px solid rgba(192, 192, 214);
+    outline-offset: -2px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #e6e9ea;
+    padding: 1rem;
+}
