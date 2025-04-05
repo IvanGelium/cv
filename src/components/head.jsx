@@ -1,19 +1,39 @@
+import { useState } from 'react'
 import '../styles/head.css'
+import InputField from './inputText'
+import Button from './button'
 
 function Head() {
+    const [edit, setEdit] = useState(false)
     return (
         <div id='head' className='block'>
             <div className='headWrap'>
                 <div id='mainInfo'>
-                    <h2>Резюме:</h2>
-                    <h1>ФАМИЛИЯ ИМЯ ОТЧЕСТВО</h1>
-                    <h3>Профессия</h3>
+                    <div className='titleButtonContainer'>
+                        <h2>Резюме:</h2>
+                        <Button
+                            text='Изменить'
+                            edit={{ setFunc: setEdit, edit: edit }}
+                        ></Button>
+                    </div>
+                    <InputField
+                        initValue='Иван Гелиум Тестов'
+                        edit={edit}
+                        size='h1'
+                    />
+                    <InputField
+                        initValue='Тестировщик'
+                        edit={edit}
+                        size='h3'
+                    />
                 </div>
-                {/* <StarPhotoField/> */}
             </div>
             <div id='skills' className='unimp'>
-                javascript, react, тестирование, API, REST, git,
-                webpack, vite, QA
+                <InputField
+                    initValue='Тестирование, GIT, Хуит'
+                    edit={edit}
+                    size='p'
+                />
             </div>
         </div>
     )

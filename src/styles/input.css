@@ -1,0 +1,16 @@
+.inputText {
+    border: 0px;
+    outline: 2px solid gainsboro;
+    outline-offset: -2px;
+    height: 2.5rem;
+    padding: 0rem 0.5rem;
+    padding-right: 0.5rem 0rem;
+    border-radius: 0.5rem;
+}
+
+.inputText:focus {
+    outline: 2px solid rgb(112, 159, 174);
+}
+.inputText:hover {
+    outline: 2px solid rgb(175, 212, 224);
+}

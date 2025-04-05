@@ -17,3 +17,14 @@
     background-color: #e6e9ea;
     padding: 1rem;
 }
+
+.titleButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.time {
+    display: flex;
+    gap: 1rem;
+}
